@@ -1,0 +1,310 @@
+[
+  {
+    "question": "What is the maximum supply voltage for the UNO SPE Shield?",
+    "expected_answer": "24 VDC",
+    "expected_source_file": "ASX00073-datasheet.pdf",
+    "expected_page": 10,
+    "question_type": "table"
+  },
+  {
+    "question": "What RS-485 transceiver IC does the UNO SPE Shield use?",
+    "expected_answer": "XR33058IDTR-F",
+    "expected_source_file": "ASX00073-datasheet.pdf",
+    "expected_page": 5,
+    "question_type": "factual"
+  },
+  {
+    "question": "What is the maximum operating current of the UNO SPE Shield?",
+    "expected_answer": "2.0 A",
+    "expected_source_file": "ASX00073-datasheet.pdf",
+    "expected_page": 10,
+    "question_type": "table"
+  },
+  {
+    "question": "What is the maximum bus length for the 10BASE-T1S SPE network on the UNO SPE Shield?",
+    "expected_answer": "25 m",
+    "expected_source_file": "ASX00073-datasheet.pdf",
+    "expected_page": 6,
+    "question_type": "numeric"
+  },
+  {
+    "question": "How many nodes can the UNO SPE Shield support in a multidrop SPE network?",
+    "expected_answer": "8 nodes",
+    "expected_source_file": "ASX00073-datasheet.pdf",
+    "expected_page": 6,
+    "question_type": "numeric"
+  },
+  {
+    "question": "What ingress protection or environmental rating does the UNO SPE Shield housing have?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "expected_source_file": null,
+    "expected_page": null,
+    "question_type": "not_answerable"
+  },
+  {
+    "question": "What is the maximum operating current the GPIOs on the Nano ESP32 can source?",
+    "expected_answer": "40 mA",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 15,
+    "question_type": "numeric"
+  },
+  {
+    "question": "What is the recommended VIN input voltage range for the Nano ESP32?",
+    "expected_answer": "6-21 V",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 14,
+    "question_type": "table"
+  },
+  {
+    "question": "What is the maximum ambient operating temperature for the Nano ESP32?",
+    "expected_answer": "105 \u00b0C",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 6,
+    "question_type": "table"
+  },
+  {
+    "question": "What radio module is the Nano ESP32 based on?",
+    "expected_answer": "NORA-W106-10B",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 8,
+    "question_type": "factual"
+  },
+  {
+    "question": "How much external flash memory does the Nano ESP32 have?",
+    "expected_answer": "128 Mbit (16 MB)",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 13,
+    "question_type": "numeric"
+  },
+  {
+    "question": "What is the operating voltage of the Nano ESP32?",
+    "expected_answer": "3.3 V",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 14,
+    "question_type": "factual"
+  },
+  {
+    "question": "What Bluetooth version does the Nano ESP32 support?",
+    "expected_answer": "Bluetooth LE v5.0",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 9,
+    "question_type": "factual"
+  },
+  {
+    "question": "What are the default I2C pins on the Nano ESP32?",
+    "expected_answer": "A4 (SDA) and A5 (SCL)",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 11,
+    "question_type": "factual"
+  },
+  {
+    "question": "How much PSRAM does the Nano ESP32's radio module include?",
+    "expected_answer": "8 MB",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 10,
+    "question_type": "numeric"
+  },
+  {
+    "question": "Does the Nano ESP32 support native Ethernet connectivity?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "expected_source_file": null,
+    "expected_page": null,
+    "question_type": "not_answerable"
+  },
+  {
+    "question": "What microprocessor (MPU) does the Arduino UNO Q use?",
+    "expected_answer": "Qualcomm Dragonwing QRB2210, quad-core Arm Cortex-A53 at 2.0 GHz",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 8,
+    "question_type": "factual"
+  },
+  {
+    "question": "What real-time microcontroller (MCU) does the Arduino UNO Q use?",
+    "expected_answer": "STMicroelectronics STM32U585, Arm Cortex-M33 up to 160 MHz",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 8,
+    "question_type": "factual"
+  },
+  {
+    "question": "What is the maximum current the UNO Q can draw over USB-C VBUS?",
+    "expected_answer": "up to 3 A",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 12,
+    "question_type": "table"
+  },
+  {
+    "question": "What is the recommended DC input voltage range for the UNO Q's VIN?",
+    "expected_answer": "7-24 V",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 12,
+    "question_type": "table"
+  },
+  {
+    "question": "What is the maximum operating temperature for the Arduino UNO Q?",
+    "expected_answer": "60 \u00b0C",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 13,
+    "question_type": "table"
+  },
+  {
+    "question": "What are the two RAM/storage configuration options for the UNO Q?",
+    "expected_answer": "2 GB RAM / 16 GB storage (ABX00162), or 4 GB RAM / 32 GB storage (ABX00173)",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 8,
+    "question_type": "factual"
+  },
+  {
+    "question": "What operating system does the MPU on the UNO Q run?",
+    "expected_answer": "Debian Linux OS",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 1,
+    "question_type": "factual"
+  },
+  {
+    "question": "What is the tolerance range of the UNO Q's 3.3 V system rail?",
+    "expected_answer": "3.1 V to 3.5 V",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 13,
+    "question_type": "table"
+  },
+  {
+    "question": "How many pins does the JMEDIA connector on the UNO Q have and at what voltage does it operate?",
+    "expected_answer": "60-pin, 1.8 V signals",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 10,
+    "question_type": "table"
+  },
+  {
+    "question": "What Wi-Fi standard does the UNO Q support?",
+    "expected_answer": "Wi-Fi 5 802.11a/b/g/n/ac (dual-band)",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 9,
+    "question_type": "factual"
+  },
+  {
+    "question": "What maximum display resolution does the UNO Q support in SBC mode?",
+    "expected_answer": "Full HD (1920x1080p), optimal at 1280x720p",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 9,
+    "question_type": "factual"
+  },
+  {
+    "question": "How much RAM does the STM32U585 microcontroller on the UNO Q have?",
+    "expected_answer": "786 kB SRAM, 2 MB Flash",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 9,
+    "question_type": "numeric"
+  },
+  {
+    "question": "Can the UNO Q output both USB-C DisplayPort and JMEDIA MIPI-DSI video simultaneously?",
+    "expected_answer": "No, only one display output can be active at a time",
+    "expected_source_file": "ABX00162-ABX00173-datasheet.pdf",
+    "expected_page": 9,
+    "question_type": "factual"
+  },
+  {
+    "question": "What is the maximum GPS accuracy of the Arduino UNO Q?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "expected_source_file": null,
+    "expected_page": null,
+    "question_type": "not_answerable"
+  },
+  {
+    "question": "Which Arduino board in this set supports Single Pair Ethernet, and which supports Wi-Fi 5?",
+    "expected_answer": "The UNO SPE Shield supports Single Pair Ethernet (10BASE-T1S); the UNO Q supports Wi-Fi 5",
+    "expected_source_file": "ASX00073-datasheet.pdf",
+    "expected_page": 6,
+    "question_type": "factual"
+  },
+  {
+    "question": "What microcontroller does the Arduino UNO R3 use as its main processor?",
+    "expected_answer": "ATmega328P",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 1,
+    "question_type": "factual"
+  },
+  {
+    "question": "What is the maximum input voltage from the VIN pad on the UNO R3?",
+    "expected_answer": "20 V",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 6,
+    "question_type": "table"
+  },
+  {
+    "question": "What is the minimum input voltage from the VIN pad on the UNO R3?",
+    "expected_answer": "6 V",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 6,
+    "question_type": "table"
+  },
+  {
+    "question": "What is the maximum operating temperature for the UNO R3?",
+    "expected_answer": "85 \u00b0C (185 \u00b0F)",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 6,
+    "question_type": "table"
+  },
+  {
+    "question": "How much SRAM does the ATmega328P on the UNO R3 have?",
+    "expected_answer": "2 kB",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 2,
+    "question_type": "numeric"
+  },
+  {
+    "question": "How much flash memory does the ATmega328P on the UNO R3 have?",
+    "expected_answer": "32 kB",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 2,
+    "question_type": "numeric"
+  },
+  {
+    "question": "What secondary processor handles USB communication on the UNO R3?",
+    "expected_answer": "ATMega16U2",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 1,
+    "question_type": "factual"
+  },
+  {
+    "question": "What is the maximum current draw of the ATMEGA328P-PU according to the power tree?",
+    "expected_answer": "410 mA",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 8,
+    "question_type": "numeric"
+  },
+  {
+    "question": "What connector type is used to power the UNO R3 via the barrel jack?",
+    "expected_answer": "2.1x5.5mm power jack",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 7,
+    "question_type": "factual"
+  },
+  {
+    "question": "How many digital I/O pins does the UNO R3 have?",
+    "expected_answer": "14",
+    "expected_source_file": "A000066-datasheet.pdf",
+    "expected_page": 5,
+    "question_type": "numeric"
+  },
+  {
+    "question": "What is the maximum power consumption (in mA) of the UNO R3?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "expected_source_file": null,
+    "expected_page": null,
+    "question_type": "not_answerable"
+  },
+  {
+    "question": "Does the UNO R3 have built-in Wi-Fi?",
+    "expected_answer": "I don't know based on the provided documents.",
+    "expected_source_file": null,
+    "expected_page": null,
+    "question_type": "not_answerable"
+  },
+  {
+    "question": "Between the UNO R3 and the Nano ESP32, which board has wireless connectivity built in?",
+    "expected_answer": "The Nano ESP32 has built-in Wi-Fi and Bluetooth LE; the UNO R3 does not",
+    "expected_source_file": "ABX00083-datasheet.pdf",
+    "expected_page": 2,
+    "question_type": "factual"
+  }
+]

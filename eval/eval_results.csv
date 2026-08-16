@@ -1,0 +1,100 @@
+question,question_type,expected_answer,generated_answer,retrieval_precision,retrieval_recall,answer_correct,total_sec
+What is the maximum supply voltage for the UNO SPE Shield?,table,24 VDC,"According to Excerpt 2, the maximum supply voltage for the board is 24 V [ABX00162-ABX00173-datasheet.pdf, p.13].",0.2,1.0,True,11.538
+What RS-485 transceiver IC does the UNO SPE Shield use?,factual,XR33058IDTR-F,"The UNO SPE Shield uses an XR33058IDTR-F transceiver [ASX00073-datasheet.pdf, p.9].",0.0,0.0,True,8.504
+What is the maximum operating current of the UNO SPE Shield?,table,2.0 A,I don't know based on the provided documents.,0.0,0.0,False,5.075
+What is the maximum bus length for the 10BASE-T1S SPE network on the UNO SPE Shield?,numeric,25 m,"The maximum length of the bus must be ≤ 25 m [ASX00073-datasheet.pdf, p.8, SECTION: 2.2.1 Connection Recommendations].",0.2,1.0,True,5.48
+How many nodes can the UNO SPE Shield support in a multidrop SPE network?,numeric,8 nodes,"According to Excerpt 1 [ASX00073-datasheet.pdf, p.8], the multidrop mode can support up to eight nodes on one mixing segment. 
+
+According to Excerpt 2 [ASX00073-datasheet.pdf, p.6], the UNO SPE Shield supports up to eight nodes in a multidrop network.
+
+According to Excerpt 3 [ASX00073-datasheet.pdf, p.7], the UNO SPE Shield multidrop setup also supports up to eight nodes.
+
+All excerpts agree on the number of nodes supported in a multidrop SPE network.",0.2,1.0,True,5.884
+What ingress protection or environmental rating does the UNO SPE Shield housing have?,not_answerable,I don't know based on the provided documents.,I don't know based on the provided documents.,0.0,0.0,True,3.439
+What is the maximum operating current the GPIOs on the Nano ESP32 can source?,numeric,40 mA,"The maximum operating current the GPIOs on the Nano ESP32 can source is 40 mA [ABX00083-datasheet.pdf, p.15].",0.2,1.0,True,3.933
+What is the recommended VIN input voltage range for the Nano ESP32?,table,6-21 V,"The recommended input voltage range for the Nano ESP32 is 6-21 V [ABX00083-datasheet.pdf, p.14, SECTION: 11.3 VIN Rating].",0.4,1.0,True,3.964
+What is the maximum ambient operating temperature for the Nano ESP32?,table,105 °C,"According to Excerpt 2, the maximum ambient temperature for the Nano ESP32 is 105°C [ABX00083-datasheet.pdf, p.6].",0.2,1.0,True,4.904
+What radio module is the Nano ESP32 based on?,factual,NORA-W106-10B,"The Nano ESP32 is based on the NORA-W106-10B radio module [ABX00083-datasheet.pdf, p.9] and [ABX00083-datasheet.pdf, p.6].",0.0,0.0,True,5.754
+How much external flash memory does the Nano ESP32 have?,numeric,128 Mbit (16 MB),"The Nano ESP32 has 128 Mbit (16 MB) external flash memory [ABX00083-datasheet.pdf, p.13] [ABX00083-datasheet.pdf, p.33].",0.2,1.0,True,8.042
+What is the operating voltage of the Nano ESP32?,factual,3.3 V,"The operating voltage of the Nano ESP32 is 3.3 V [ABX00083-datasheet.pdf, p.34, SECTION: 33.2 引脚电压] and [ABX00083-datasheet.pdf, p.14, SECTION: 11.2 Pin Voltage].",0.4,1.0,True,10.048
+What Bluetooth version does the Nano ESP32 support?,factual,Bluetooth LE v5.0,"According to Excerpt 2 [ABX00083-datasheet.pdf, p.6], the module has support for Bluetooth Low Energy (LE). 
+
+However, Excerpt 2 does not explicitly state the version of Bluetooth LE. 
+
+I don't know based on the provided documents.",0.0,0.0,False,9.305
+What are the default I2C pins on the Nano ESP32?,factual,A4 (SDA) and A5 (SCL),"The default I2C pins on the Nano ESP32 are A4 (SDA) and A5 (SCL) [ABX00083-datasheet.pdf, p.11].",0.2,1.0,True,9.652
+How much PSRAM does the Nano ESP32's radio module include?,numeric,8 MB,"According to Excerpt 2, PAGE: 28, SECTION: 28.4 PSRAM, the NORA-W106-10B module includes PSRAM. 
+
+According to Excerpt 5, PAGE: 10, SECTION: 6.4 PSRAM, the NORA-W106-10B module includes 8 MB of embedded PSRAM.
+
+[Citation: ABX00083-datasheet.pdf, p.28 and p.10]",0.2,1.0,True,9.904
+Does the Nano ESP32 support native Ethernet connectivity?,not_answerable,I don't know based on the provided documents.,I don't know based on the provided documents.,0.0,0.0,True,9.766
+What microprocessor (MPU) does the Arduino UNO Q use?,factual,"Qualcomm Dragonwing QRB2210, quad-core Arm Cortex-A53 at 2.0 GHz","The Arduino UNO Q uses the Qualcomm Dragonwing QRB2210 microprocessor (MPU), a quad-core Arm Cortex-A53 [ABX00162-ABX00173-datasheet.pdf, p.1] [ABX00162-ABX00173-datasheet.pdf, p.69].",0.0,0.0,False,15.09
+What real-time microcontroller (MCU) does the Arduino UNO Q use?,factual,"STMicroelectronics STM32U585, Arm Cortex-M33 up to 160 MHz","The Arduino UNO Q uses the STMicroelectronics STM32U585 Microcontroller (MCU), an Arm Cortex-M33 running Arduino Core on Zephyr OS [ABX00162-ABX00173-datasheet.pdf, p.1] [ABX00162-ABX00173-datasheet.pdf, p.69].",0.0,0.0,False,11.464
+What is the maximum current the UNO Q can draw over USB-C VBUS?,table,up to 3 A,"According to Excerpt 3 [ABX00162-ABX00173-datasheet.pdf, p.12], the maximum current the UNO Q can draw over USB-C VBUS is up to 3 A [ABX00162-ABX00173-datasheet.pdf, p.12, SECTION: 3.1 Input Power].",0.4,1.0,True,14.547
+What is the recommended DC input voltage range for the UNO Q's VIN?,table,7-24 V,I don't know based on the provided documents.,0.2,1.0,False,15.095
+What is the maximum operating temperature for the Arduino UNO Q?,table,60 °C,"According to Excerpt 2, the maximum operating temperature for the Arduino UNO Q is 60°C [ABX00162-ABX00173-datasheet.pdf, p.13].",0.6,1.0,True,8.934
+What are the two RAM/storage configuration options for the UNO Q?,factual,"2 GB RAM / 16 GB storage (ABX00162), or 4 GB RAM / 32 GB storage (ABX00173)","The two RAM/storage configuration options for the UNO Q are:
+
+- 2 GB RAM, 16 GB on-board storage (ABX00162)
+- 4 GB RAM, 32 GB on-board storage (ABX00173)
+
+[Citation: ABX00162-ABX00173-datasheet.pdf, p.8, SECTION: 2.1 UNO Q Variants]",0.2,1.0,True,10.825
+What operating system does the MPU on the UNO Q run?,factual,Debian Linux OS,"The MPU on the UNO Q runs Debian Linux OS [ABX00162-ABX00173-datasheet.pdf, p.1] and Debian (suporte upstream) [ABX00162-ABX00173-datasheet.pdf, p.72].",0.4,1.0,True,13.258
+What is the tolerance range of the UNO Q's 3.3 V system rail?,table,3.1 V to 3.5 V,"According to Excerpt 4 [ABX00162-ABX00173-datasheet.pdf, p.13], the tolerance range of the UNO Q's 3.3 V system rail (PWR_3P3V) is 3.1 V to 3.5 V [ABX00162-ABX00173-datasheet.pdf, p.13].",0.2,1.0,True,16.861
+How many pins does the JMEDIA connector on the UNO Q have and at what voltage does it operate?,table,"60-pin, 1.8 V signals","According to Excerpt 3 [ABX00162-ABX00173-datasheet.pdf, p.10], the JMEDIA connector (JMEDIA1) has 60 pins. 
+
+It operates at 1.8 V, as stated in Excerpt 3 [ABX00162-ABX00173-datasheet.pdf, p.10] and Excerpt 2 [ABX00162-ABX00173-datasheet.pdf, p.23].",0.2,1.0,False,15.029
+What Wi-Fi standard does the UNO Q support?,factual,Wi-Fi 5 802.11a/b/g/n/ac (dual-band),"According to Excerpt 2 [ABX00162-ABX00173-datasheet.pdf, p.1], the UNO Q features dual-band Wi-Fi 5. 
+
+However, Excerpt 5 [ABX00087-datasheet.pdf, p.3] describes a different product and mentions Wi-Fi 4 (802.11 b/g/n standard) with a bit rate of up to 150 Mbps in the 2.4 GHz band.
+
+There is a conflict between the two excerpts regarding the Wi-Fi standard supported by the UNO Q. Excerpt 2 mentions Wi-Fi 5, while Excerpt 5 mentions Wi-Fi 4.",0.0,0.0,True,12.944
+What maximum display resolution does the UNO Q support in SBC mode?,factual,"Full HD (1920x1080p), optimal at 1280x720p","According to Excerpt 3 [ABX00162-ABX00173-datasheet.pdf, p.73], the UNO Q supports Full HD (1920 × 1080p) displays in SBC mode. However, it also mentions that the optimal resolution is 1280 × 720p.
+
+Alternatively, Excerpt 5 [ABX00162-ABX00173-datasheet.pdf, p.32] also states that when operating in Single-Board Computer (SBC) mode, the board supports Full HD (1920 × 1080p) displays with optimal resolution at 1280 × 720p.
+
+There is a slight conflict between the two excerpts, but both agree that the optimal resolution is 1280 × 720p.",0.2,1.0,True,15.284
+How much RAM does the STM32U585 microcontroller on the UNO Q have?,numeric,"786 kB SRAM, 2 MB Flash",I don't know based on the provided documents.,0.0,0.0,False,13.403
+Can the UNO Q output both USB-C DisplayPort and JMEDIA MIPI-DSI video simultaneously?,factual,"No, only one display output can be active at a time","No, the two display outputs are multiplexed and not simultaneous [Excerpt 1, SECTION: 10 High-Speed Peripherals], [Excerpt 4, SECTION: Arduino® UNO Q], [Excerpt 5, SECTION: Arduino® UNO Q].",0.2,1.0,False,15.366
+What is the maximum GPS accuracy of the Arduino UNO Q?,not_answerable,I don't know based on the provided documents.,I don't know based on the provided documents.,0.0,0.0,True,7.794
+"Which Arduino board in this set supports Single Pair Ethernet, and which supports Wi-Fi 5?",factual,The UNO SPE Shield supports Single Pair Ethernet (10BASE-T1S); the UNO Q supports Wi-Fi 5,"Based on the provided excerpts, the Arduino board that supports Single Pair Ethernet is the Arduino UNO SPE Shield [ASX00073-datasheet.pdf, p.1] and [ASX00073-datasheet.pdf, p.6].
+
+The Arduino board that supports Wi-Fi 5 is not mentioned in the excerpts related to the Arduino UNO SPE Shield. However, Excerpt 4 mentions a wireless module with Wi-Fi 5, but it does not specify which Arduino board it is associated with. Therefore, I don't know based on the provided documents which Arduino board supports Wi-Fi 5.
+
+Conflict: The Arduino UNO SPE Shield supports Single Pair Ethernet, but there is no clear information about which Arduino board supports Wi-Fi 5.",0.2,1.0,False,9.715
+What microcontroller does the Arduino UNO R3 use as its main processor?,factual,ATmega328P,"The Arduino UNO R3 uses the ATmega328P processor as its main processor [A000066-datasheet.pdf, p.5] and [A000066-datasheet.pdf, p.1].",0.2,1.0,True,11.373
+What is the maximum input voltage from the VIN pad on the UNO R3?,table,20 V,I don't know based on the provided documents.,0.2,1.0,False,9.446
+What is the minimum input voltage from the VIN pad on the UNO R3?,table,6 V,"I don't know based on the provided documents.
+
+The provided excerpts do not mention the UNO R3. Excerpts 1, 2, 3, and 4 mention a board that can be powered via VIN, but they do not specify the board's name. Excerpt 5 mentions a board with a maximum input voltage from VIN pad of 6 V, but it does not specify the board's name either.",0.2,1.0,True,9.498
+What is the maximum operating temperature for the UNO R3?,table,85 °C (185 °F),"I don't know based on the provided documents.
+
+However, I can find information about the operating temperature for the UNO R3 in Excerpt 2, but it is for a different product (DC_IN). 
+
+Excerpt 2 does not mention the UNO R3, but it does mention a temperature range for a different product. 
+
+Excerpt 4 mentions the UNO R3, but it does not provide information about the maximum operating temperature. 
+
+Excerpt 5 mentions the UNO R3, but it does not provide information about the maximum operating temperature.
+
+Excerpt 2 does provide information about the operating temperature for a different product, but it does not provide information about the UNO R3.",0.0,0.0,False,10.634
+How much SRAM does the ATmega328P on the UNO R3 have?,numeric,2 kB,"According to Excerpt 1, the ATmega328P processor has 2KB SRAM [A000066-datasheet.pdf, p.16].",0.0,0.0,True,15.087
+How much flash memory does the ATmega328P on the UNO R3 have?,numeric,32 kB,"I don't know based on the provided documents.
+
+The provided excerpts do not mention the UNO R3 or the ATmega328P. Excerpts 1-3 describe the UNO Q, and Excerpt 4 also describes the UNO Q, but there is no information about the UNO R3 or the ATmega328P in any of the excerpts. Excerpt 5 is about a different product, A000066, which is not the UNO R3.",0.2,1.0,True,8.465
+What secondary processor handles USB communication on the UNO R3?,factual,ATMega16U2,"The secondary processor that handles USB communication on the UNO R3 is the ATMega 16U2 Processor [Excerpt 1, p.1]. However, it is also mentioned that some pins of the Main Processor (ATmega328P) are reserved for internal communication with the USB Bridge coprocessor [Excerpt 4, p.7]. 
+
+Note: There is a conflict between the two statements. Excerpt 1 directly mentions the ATMega 16U2 Processor, while Excerpt 4 mentions the USB Bridge coprocessor. The exact relationship between the ATMega 16U2 Processor and the USB Bridge coprocessor is not clear from the provided excerpts.",0.2,1.0,True,11.61
+What is the maximum current draw of the ATMEGA328P-PU according to the power tree?,numeric,410 mA,I don't know based on the provided documents.,0.2,1.0,False,9.182
+What connector type is used to power the UNO R3 via the barrel jack?,factual,2.1x5.5mm power jack,I don't know based on the provided documents.,0.0,0.0,False,7.353
+How many digital I/O pins does the UNO R3 have?,numeric,14,"The UNO R3 has 14 digital input/output pins [A000066-datasheet.pdf, p.5].",0.2,1.0,True,11.913
+What is the maximum power consumption (in mA) of the UNO R3?,not_answerable,I don't know based on the provided documents.,"I don't know based on the provided documents.
+
+The provided documents mention the maximum power consumption of the UNO R3 in different sections, but the values are not specified. In Excerpt 4, the maximum power consumption is mentioned as ""xx"" mA, which is not a valid value. In Excerpt 5, there is a mention of maximum power consumption, but it is for a different product and the value is also ""TBC"" (To Be Confirmed).",0.0,0.0,True,9.547
+Does the UNO R3 have built-in Wi-Fi?,not_answerable,I don't know based on the provided documents.,"Based on the provided excerpts, I don't know based on the provided documents.",0.0,0.0,True,11.791
+"Between the UNO R3 and the Nano ESP32, which board has wireless connectivity built in?",factual,The Nano ESP32 has built-in Wi-Fi and Bluetooth LE; the UNO R3 does not,"Based on the provided excerpts, the Nano ESP32 has wireless connectivity built in, as stated in Excerpt 1: ""This module has support for Wi-Fi and Bluetooth Low Energy (LE), with amplified communication through a built-in antenna."" [ABX00083-datasheet.pdf, p.6]
+
+There is no mention of wireless connectivity on the UNO R3 in the provided excerpts. Therefore, I don't have enough information to compare the two boards directly. However, based on the information provided, the Nano ESP32 has wireless connectivity built in.
+
+Note: The UNO R3 is not mentioned in the provided excerpts, so I couldn't find any information about it.",0.0,0.0,False,9.785

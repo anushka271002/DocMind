@@ -1,0 +1,29 @@
+# --- PDF parsing & structure extraction ---
+PyMuPDF==1.24.10          # fast text+layout extraction, gives font size/bold info (needed to detect headings)
+pdfplumber==0.11.4        # dedicated table detection/extraction (PyMuPDF is bad at tables)
+
+# --- Chunking helpers ---
+regex==2024.9.11          # more robust sentence-boundary regex than stdlib re
+
+# --- Dense retrieval ---
+sentence-transformers==3.1.1   # embedding models (all-MiniLM-L6-v2) + cross-encoder reranker
+faiss-cpu==1.12.0                # vector index, no GPU required, easy to deploy
+torch==2.9.1                    # backend for sentence-transformers
+
+# --- Sparse retrieval ---
+rank-bm25==0.2.2          # simple, dependency-light BM25 implementation
+
+# --- Generation (LLM API) ---
+groq==1.6.0               # free-tier LLM API (Llama 3.1), fast inference, easy swap-out
+python-dotenv==1.0.1        # load API keys from .env instead of hardcoding
+
+# --- App / interface ---
+streamlit==1.39.0
+
+# --- Eval / reporting ---
+pandas==2.2.3
+tabulate==0.9.0
+
+# --- Utilities ---
+tqdm==4.66.5
+numpy==1.26.4

@@ -1,0 +1,22 @@
+# secrets
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# data artifacts (large / regenerable — don't commit)
+data/pdfs/*.pdf
+data/processed/*.jsonl
+data/index/*
+!data/pdfs/.gitkeep
+!data/processed/.gitkeep
+!data/index/.gitkeep
+
+# streamlit
+.streamlit/secrets.toml
+
+# os
+.DS_Store
