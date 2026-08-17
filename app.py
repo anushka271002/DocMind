@@ -29,6 +29,15 @@ WHY the "view source page" image feature (this pass):
   not the literal PDF text -- so table chunks show the page without a highlight,
   with a caption explaining why, instead of silently failing to highlight anything.
 
+  DEPLOYMENT NOTE: this feature opens the ORIGINAL PDF file from PDF_DIR at
+  render time (fitz.open(pdf_path_str)), not just the prebuilt index. Since
+  data/pdfs/*.pdf is gitignored (only the built index is committed/deployed),
+  the original PDFs will NOT be present in a deployed environment like
+  Streamlit Cloud unless you deliberately also commit them. In that case this
+  button correctly falls through to the "Original file not found" warning
+  below rather than crashing -- that's expected behavior given the current
+  deployment setup, not a bug.
+
 DESIGN NOTES (earlier pass):
   Plain, restrained styling -- one accent color, flat pill badges, consistent
   8px-radius cards, light sidebar, standard fonts. Nothing here should call
@@ -330,8 +339,16 @@ if query:
             st.text(c["text"][:250] + ("..." if len(c["text"]) > 250 else ""))
 else:
     st.info("Enter a question above to query your documents.")
-    if not any(PDF_DIR.glob("*.pdf")):
+    # Check the loaded INDEX for content, not raw PDF files on disk -- in a
+    # deployed environment (e.g. Streamlit Cloud), the source PDFs are correctly
+    # excluded from the repo once ingested (only the prebuilt index is shipped),
+    # so checking for .pdf files here would show a misleading warning even when
+    # everything is working correctly. This only guards the initial "nothing
+    # ingested yet" empty state -- unrelated to the "View source page" feature's
+    # own, separate need for the original PDFs (see its DEPLOYMENT NOTE above).
+    if not index.chunks:
         st.warning(
-            f"No PDFs found in `{PDF_DIR}`. Add PDFs there and run "
-            "`python scripts/ingest.py && python scripts/build_index.py` before querying."
+            f"The index has no chunks. If running locally, add PDFs to `{PDF_DIR}` "
+            "and run `python scripts/ingest.py && python scripts/build_index.py`. "
+            "If deployed, make sure `data/index/` was committed and pushed."
         )
